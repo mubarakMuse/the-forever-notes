@@ -65,7 +65,7 @@ const NavBar = () => {
           to="/"
           style={titleStyle}
         >
-          <img src={YourLogo} alt="Logo" style={logoStyle} /> Forever Notes
+          <img src={YourLogo} alt="Logo" style={logoStyle} /> Forever Note
         </Typography>
       </Toolbar>
       <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
