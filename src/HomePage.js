@@ -45,7 +45,7 @@ const HomePage = () => {
   return (
     <Box style={containerStyle}>
       <Typography variant="h1" style={titleStyle}>
-        Welcome to Forever Notes
+        Welcome to Forever Note
       </Typography>
       <Typography variant="h6" style={subtitleStyle}>
         Store and access important information securely.
