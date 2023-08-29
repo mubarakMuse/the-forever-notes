@@ -9,22 +9,23 @@ const HomePage = () => {
     alignItems: 'center',
     justifyContent: 'center',
     minHeight: '100vh',
-    backgroundColor: '#f7f7f7',
+    backgroundColor: 'white', // Changed background color to white
     padding: '32px',
   };
 
   const titleStyle = {
-    fontSize: '3rem',
+    fontSize: '2.5rem',
+    fontWeight: 'bold',
     marginBottom: '16px',
     textAlign: 'center',
-    color: '#333',
+    color: 'black', // Changed title color to black
   };
 
   const subtitleStyle = {
     fontSize: '1.25rem',
     marginBottom: '32px',
     textAlign: 'center',
-    color: '#555',
+    color: 'black', // Changed subtitle color to black
   };
 
   const buttonContainerStyle = {
@@ -38,12 +39,13 @@ const HomePage = () => {
     width: '200px',
     fontWeight: 'bold',
     fontSize: '1rem',
+    color: 'white', // Changed button text color to white
   };
 
   return (
     <Box style={containerStyle}>
       <Typography variant="h1" style={titleStyle}>
-        Welcome to The Forever Notes
+        Welcome to Forever Notes
       </Typography>
       <Typography variant="h6" style={subtitleStyle}>
         Store and access important information securely.
@@ -55,7 +57,7 @@ const HomePage = () => {
           size="large"
           component={Link}
           to="/create"
-          style={buttonStyle}
+          style={{ ...buttonStyle, backgroundColor: 'black' }} // Changed button background color to black
         >
           Submit Information
         </Button>
@@ -65,7 +67,7 @@ const HomePage = () => {
           size="large"
           component={Link}
           to="/lookup"
-          style={buttonStyle}
+          style={{ ...buttonStyle, borderColor: 'black', color: 'black' }} // Changed button border color and text color to black
         >
           Find Information
         </Button>

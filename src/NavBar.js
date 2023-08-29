@@ -10,7 +10,9 @@ import {
   ListItem,
   ListItemText,
 } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu'; // Correct import path
+import MenuIcon from '@mui/icons-material/Menu';
+
+import YourLogo from './FN_LOGO (1).png'; // Change to the actual path of your logo image
 
 const NavBar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -26,8 +28,28 @@ const NavBar = () => {
     setDrawerOpen(open);
   };
 
+  const appBarStyle = {
+    backgroundColor: 'black', // Change to your brand color
+  };
+
+  const titleStyle = {
+    flexGrow: 1,
+    fontSize: '1.5rem',
+    fontWeight: 'bold',
+    color: 'white', // Change to your brand color
+    textDecoration: 'none',
+    display: 'flex',
+    alignItems: 'center',
+  };
+
+  const logoStyle = {
+    marginRight: '8px',
+    width: '60px', // Adjust the width of the logo
+    height: '40px', // Adjust the height of the logo
+  };
+
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={appBarStyle}>
       <Toolbar>
         <IconButton
           edge="start"
@@ -37,8 +59,13 @@ const NavBar = () => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" component={Link} to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-          Forever Docs
+        <Typography
+          variant="h6"
+          component={Link}
+          to="/"
+          style={titleStyle}
+        >
+          <img src={YourLogo} alt="Logo" style={logoStyle} /> Forever Notes
         </Typography>
       </Toolbar>
       <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>

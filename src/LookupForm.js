@@ -12,7 +12,7 @@ import {
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const InformationForm = () => {
+const LookupForm = () => {
     const navigate = useNavigate();
 
     const [isOwner, setIsOwner] = useState(true);
@@ -226,4 +226,4 @@ const InformationForm = () => {
     );
 };
 
-export default InformationForm;
+export default LookupForm;
