@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import YourLogo from './FN_LOGO (1).png'; // Change to the actual path of your logo image
+import YourLogo from './logo.png'; // Change to the actual path of your logo image
 
 const NavBar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
